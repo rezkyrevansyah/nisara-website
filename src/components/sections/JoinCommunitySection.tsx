@@ -5,6 +5,14 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { VOLUNTEER_ROLES } from "@/data/content";
+import CustomSelect from "@/components/ui/CustomSelect";
+
+const ROLE_OPTIONS = [
+  { value: "konten", label: "Relawan Konten & Edukasi" },
+  { value: "kampus", label: "Mitra / Duta Kampus" },
+  { value: "peer", label: "Peer Support Terlatih" },
+  { value: "lainnya", label: "Lainnya" },
+];
 
 export default function JoinCommunitySection() {
   const [formData, setFormData] = useState({
@@ -151,18 +159,14 @@ export default function JoinCommunitySection() {
                 >
                   Peran yang diminati
                 </label>
-                <select
+                <CustomSelect
                   id="join-role"
+                  name="role"
                   value={formData.role}
-                  onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                  className="w-full h-[48px] px-3.5 text-[14px] bg-cream border border-line rounded-[8px] text-ink focus:outline-none focus:border-plum transition-colors"
-                >
-                  <option value="">Pilih: konten, kampus, atau mitra</option>
-                  <option value="konten">Relawan Konten & Edukasi</option>
-                  <option value="kampus">Mitra / Duta Kampus</option>
-                  <option value="peer">Peer Support Terlatih</option>
-                  <option value="lainnya">Lainnya</option>
-                </select>
+                  onChange={(val) => setFormData({ ...formData, role: val })}
+                  placeholder="Pilih: konten, kampus, atau mitra"
+                  options={ROLE_OPTIONS}
+                />
               </div>
 
               {/* Field 3: Kota / kampus */}
