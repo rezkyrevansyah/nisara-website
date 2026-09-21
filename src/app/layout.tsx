@@ -67,8 +67,13 @@ export const metadata: Metadata = {
     images: [logoPath],
   },
   icons: {
-    icon: logoPath,
-    apple: logoPath,
+    icon: [
+      { url: logoPath, type: "image/png" },
+    ],
+    apple: [
+      { url: logoPath, type: "image/png" },
+    ],
+    shortcut: logoPath,
   },
 };
 
