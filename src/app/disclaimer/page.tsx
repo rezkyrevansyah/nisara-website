@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, AlertTriangle } from "lucide-react";
 import type { Metadata } from "next";
+import logoImg from "../../../public/images/nisara-logo.png";
 
 export const metadata: Metadata = {
   title: "Disclaimer — Nisara",
@@ -19,7 +20,7 @@ export default function DisclaimerPage() {
           <Link href="/" aria-label="Kembali ke beranda Nisara">
             <div className="relative w-[42px] h-[42px] sm:w-[58px] sm:h-[58px]">
               <Image
-                src="/images/nisara-logo.png"
+                src={logoImg}
                 alt="Logo Nisara"
                 fill
                 sizes="58px"

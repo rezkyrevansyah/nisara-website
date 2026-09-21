@@ -9,9 +9,11 @@ if (isGithubActions) {
 }
 
 const nextConfig = {
+  env: {
+    NEXT_PUBLIC_BASE_PATH: repo,
+  },
   output: isGithubActions ? "export" : undefined,
   basePath: repo || undefined,
-  assetPrefix: repo ? `${repo}/` : undefined,
   trailingSlash: true,
   images: {
     unoptimized: true,

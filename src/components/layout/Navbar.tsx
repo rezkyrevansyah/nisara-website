@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Menu, X, ArrowRight, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NAV_LINKS } from "@/data/content";
+import logoImg from "../../../public/images/nisara-logo.png";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -51,7 +52,7 @@ export default function Navbar() {
         >
           <div className="relative w-[42px] h-[42px] sm:w-[50px] sm:h-[50px] md:w-[62px] md:h-[62px] shrink-0 transition-transform group-hover:scale-105">
             <Image
-              src="/images/nisara-logo.png"
+              src={logoImg}
               alt="Logo Nisara"
               fill
               sizes="(max-width: 640px) 42px, (max-width: 768px) 50px, 62px"

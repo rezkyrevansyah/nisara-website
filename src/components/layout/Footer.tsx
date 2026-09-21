@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AlertTriangle, Instagram } from "lucide-react";
+import logoImg from "../../../public/images/nisara-logo.png";
 
 export default function Footer() {
   return (
@@ -19,7 +20,7 @@ export default function Footer() {
             <Link href="/" className="inline-block" aria-label="Nisara Beranda">
               <div className="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] md:w-[92px] md:h-[92px]">
                 <Image
-                  src="/images/nisara-logo.png"
+                  src={logoImg}
                   alt="Logo Nisara Footer"
                   fill
                   sizes="92px"

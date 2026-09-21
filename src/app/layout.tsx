@@ -23,8 +23,11 @@ export const viewport: Viewport = {
   themeColor: "#0D3035",
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const logoPath = `${basePath}/images/nisara-logo.png`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nisara.id"),
+  metadataBase: new URL("https://rezkyrevansyah.github.io/nisara-website"),
   title: "Nisara — Komunitas Perempuan Berdaya Menggema Merangkul",
   description:
     "Ruang sebaya untuk perempuan yang ingin paham, bersuara, dan tidak sendirian menghadapi kekerasan—dari kampus hingga ruang digital.",
@@ -43,13 +46,13 @@ export const metadata: Metadata = {
     title: "Nisara — Komunitas Perempuan Berdaya Menggema Merangkul",
     description:
       "Ruang sebaya untuk perempuan yang ingin paham, bersuara, dan tidak sendirian menghadapi kekerasan.",
-    url: "https://nisara.id",
+    url: "https://rezkyrevansyah.github.io/nisara-website",
     siteName: "Nisara",
     locale: "id_ID",
     type: "website",
     images: [
       {
-        url: "/images/nisara-logo.png",
+        url: logoPath,
         width: 800,
         height: 800,
         alt: "Logo Nisara",
@@ -61,11 +64,11 @@ export const metadata: Metadata = {
     title: "Nisara — Komunitas Perempuan Berdaya Menggema Merangkul",
     description:
       "Ruang sebaya untuk perempuan yang ingin paham, bersuara, dan tidak sendirian menghadapi kekerasan.",
-    images: ["/images/nisara-logo.png"],
+    images: [logoPath],
   },
   icons: {
-    icon: "/images/nisara-logo.png",
-    apple: "/images/nisara-logo.png",
+    icon: logoPath,
+    apple: logoPath,
   },
 };
 

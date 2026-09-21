@@ -2,13 +2,14 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
+import logoImg from "../../public/images/nisara-logo.png";
 
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-paper flex flex-col items-center justify-center p-6 text-center">
       <div className="relative w-20 h-20 mb-6">
         <Image
-          src="/images/nisara-logo.png"
+          src={logoImg}
           alt="Logo Nisara"
           fill
           className="object-contain"
