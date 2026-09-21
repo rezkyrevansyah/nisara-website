@@ -1,4 +1,4 @@
-﻿# Nisara — Komunitas Perempuan Indonesia
+﻿# Nisara — Ruang Aman & Komunitas Perempuan Indonesia
 
 <div align="center">
 
@@ -6,199 +6,181 @@
 
 ### *Berdaya · Menggema · Merangkul*
 
-Ruang sebaya untuk perempuan yang ingin paham, bersuara, dan tidak sendirian menghadapi kekerasan—dari kampus hingga ruang digital.
+**Sebuah platform ruang aman sebaya (peer support) dan edukasi interaktif untuk perempuan Indonesia.**  
+Dirancang dengan pendekatan *trauma-informed design*, navigasi yang ringan, aksesibilitas menyeluruh, serta protokol keselamatan privasi tingkat tinggi.
+
+---
 
 [![Next.js 15](https://img.shields.io/badge/Next.js-15.5.25-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React 19](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.17-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.4.7-FF0055?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
-[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://pages.github.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge)](LICENSE)
 
-[🌐 Demo Langsung (GitHub Pages)](#-cara-deployment-ke-github-pages) • [📖 Panduan Keselamatan](#-fitur-utama) • [🚀 Cara Menjalankan](#-cara-menjalankan-secara-lokal) • [⚖️ Legal](#-legalitas--privasi)
+[🌸 Jelajahi Fitur](#-fitur-unggulan--pengalaman-pengguna) • [🛡️ Protokol Keselamatan](#-protokol-keselamatan-survivor) • [🎨 Desain Sistem](#-filosofi-desain--design-tokens) • [📱 Responsivitas](#-responsivitas-lintas-perangkat) • [💻 Tech Stack](#-arsitektur--teknologi) • [🚀 Quickstart](#-menjalankan-proyek)
 
 ---
 
 </div>
 
-## 🌸 Tentang Nisara
+## 📖 Gambaran Proyek
 
-**Nisara** adalah inisiatif platform dan ruang komunitas perempuan Indonesia. Lahir dari kesadaran bahwa kekerasan dan pelecehan seksual sering dinormalisasi—baik di jalan raya, kampus, tempat kerja, hingga media sosial—Nisara hadir sebagai ruang aman sebaya (*peer support*) untuk memberikan edukasi praktis, memvalidasi pengalaman korban, serta menghubungkan penyintas ke kanal bantuan resmi yang terpercaya.
+**Nisara** hadir sebagai respons nyata terhadap maraknya normalisasi pelecehan dan kekerasan terhadap perempuan—baik di ruang publik, lingkungan kampus, tempat kerja, hingga ruang digital. 
 
----
+Bukan sekadar situs informasi statis, Nisara dikembangkan sebagai **antarmuka empati** (*empathy-driven interface*) yang memprioritaskan rasa tenang, kejelasan informasi pertolongan pertama, dan validasi emosional bagi siapa pun yang membutuhkan bantuan tanpa rasa takut dihakimi.
 
-## ✨ Fitur Utama
-
-### 1. 🛡️ Akses Cepat Bantuan & Keselamatan Survivor
-- **Fixed Emergency Top Bar**: Bar bantuan darurat yang terkunci permanen di bagian atas layar, menyediakan link panggil langsung (*tap-to-call*) ke **112** (Panggilan Darurat Umum) dan **SAPA 129** (KemenPPPA).
-- **Tombol Keluar Cepat (Quick Exit)**: Tombol melayang darurat dengan shortcut keyboard `ESC`. Fitur ini seketika menutup situs, menghapus cache sesi (`sessionStorage.clear()`), dan mengalihkan layar ke Google jika penyintas diawasi orang lain di ruangan.
-
-### 2. 📱 Responsif Menyeluruh (All-Device Experience)
-- Dirancang secara presisi dari versi desktop hingga mobile terkecil (320px).
-- Bebas dari bug *horizontal scroll* (`overflow-x: clip`), menggunakan tipografi dinamis (*fluid typography*), dan area sentuh jempol berstandar WCAG minimal 48×48px.
-- Menu mobile drawer halus dengan animasi transisi `framer-motion`.
-
-### 3. 📚 12 Section Landing Page Komprehensif
-1. **Top Emergency Bar**: Informasi hotline darurat nasional 24/7.
-2. **Fixed Navigation Bar**: Akses cepat logo resmi, tautan menu, dan tombol partisipasi.
-3. **Hero Section**: Headline *"Berdaya. Menggema. Merangkul."*, CTA ganda, dan visual komunitas.
-4. **Mengapa Bersuara (Why Nisara Matters)**: 3 kartu konteks (Ruang Publik, Lingkungan Kampus, Ruang Digital).
-5. **Tiga Pilar Gerakan**: Penjelasan nilai *Berdaya*, *Menggema*, dan *Merangkul*.
-6. **Panduan Keselamatan Survivor**: 4 langkah penanganan mandiri saat mengalami pelecehan + modal interaktif *"Buka panduan lengkap"*.
-7. **6 Kanal Bantuan Resmi**: Nomor telepon & link langsung (112, SAPA 129, 110 Kepolisian, Komnas Perempuan, UPTD PPA/LBH, Satgas PPKS Kampus) + tip penyamaran privasi.
-8. **Program & Gerakan**: Rangkaian inisiatif edukasi ringkas, ruang diskusi sebaya, dan relawan kampus.
-9. **Formulir Sahabat Nisara**: Pendaftaran relawan dengan perlindungan privasi (nama panggilan opsional, kontak aman, consent agreement).
-10. **Kolaborasi Kemitraan**: Formulir proposal kemitraan institusi, kampus, media, dan CSR.
-11. **FAQ Accordion**: Pertanyaan umum seputar kerahasiaan, biaya layanan, dan batas peran komunitas.
-12. **Footer Lengkap**: Ringkasan misi, tautan navigasi, disclaimer hukum, dan tagar kampanye.
-
-### 4. ⚖️ Halaman Legal Mandiri
-- **Kebijakan Privasi (`/kebijakan-privasi`)**: Transparansi penuh bahwa privasi lebih penting daripada metrik growth.
-- **Disclaimer Hukum (`/disclaimer`)**: Menjelaskan batasan bahwa Nisara adalah teman edukasi komunitas dan bukan aparat penegak hukum atau pengganti tenaga medis.
+> *"Percaya pada cerita, hormati pilihan, jaga kerahasiaan."*  
+> — Prinsip Dasar Gerakan Sahabat Nisara
 
 ---
 
-## 🎨 Desain Sistem & Tokens
+## ✨ Fitur Unggulan & Pengalaman Pengguna
 
-Palet warna dan tipografi dirancang hangat, tenang, dan tidak memicu kecemasan (*trauma-informed design*):
+### 1. 🛡️ Akses Cepat Bantuan Darurat & Hotline Nasional
+- **Fixed Emergency Top Bar**: Bilah darurat yang terkunci di puncak layar pada seluruh perangkat, menyediakan akses panggil langsung 1-klik (*tap-to-call*) ke **112** (Panggilan Darurat Terpadu) dan **SAPA 129** (KemenPPPA).
+- **Direktori 6 Kanal Bantuan Resmi**: Kurasi kontak resmi lengkap meliputi Hotline 112, SAPA 129, 110 Kepolisian, Komnas Perempuan, UPTD PPA/LBH Apik, serta Satgas PPKS Kampus.
 
-| Token | Nilai Hex | Penggunaan Utama |
+### 2. ⚡ Tombol Keluar Cepat (*Quick Exit Mechanism*)
+- Dirancang khusus untuk situasi berisiko tinggi saat korban sedang mengakses situs dan diawasi oleh orang lain.
+- Tersedia sebagai tombol melayang ergonomis dan dapat dipicu instan dengan tombol keyboard **`ESC`**.
+- Seketika membersihkan sesi peramban (`sessionStorage.clear()`) dan mengalihkan halaman ke pencarian Google netral.
+
+### 3. 🎯 Panduan Interaktif Survivor (*Step-by-Step Safety Guide*)
+- 4 langkah terstruktur penanganan mandiri saat mengalami insiden:
+  1. *Amankan Diri & Cari Titik Terang*
+  2. *Dokumentasikan Bukti Tanpa Mengubah Aslinya*
+  3. *Hubungi Bantuan Resmi Terdekat*
+  4. *Cari Ruang Pemulihan & Peer Support*
+- Dilengkapi modal dialog detail yang menyajikan *checklist* praktis langkah demi langkah.
+
+### 4. 🤝 Formulir Keterlibatan Berkelanjutan
+- **Sahabat Nisara**: Registrasi relawan dengan perlindungan privasi ketat (nama panggilan opsional, kontak aman, dan persetujuan data eksplisit).
+- **Komponen Custom Dropdown**: Pilihan peran teranimasi halus dengan Framer Motion, bebas dari masalah *layout overflow*, serta mendukung navigasi keyboard penuh.
+- **Kemitraan Institusi**: Kanal kolaborasi bagi kampus, komunitas, korporasi (CSR), dan organisasi advokasi.
+
+---
+
+## 🛡️ Protokol Keselamatan & Privasi
+
+Privasi pengguna adalah fondasi utama arsitektur Nisara:
+
+| Fitur Keselamatan | Implementasi Teknis | Dampak bagi Pengguna |
 |---|---|---|
-| **Plum** | `#173F44` | Elemen primer, tombol utama, teks judul |
-| **Plum Dark** | `#0D3035` | Background 3 Pilar, Top Bar, Footer, teks kontras tinggi |
-| **Soft Cream** | `#FFF3F2` | Card latar hero, kartu konten, selingan lembut |
-| **Paper** | `#FFFDF9` | Warna latar kanvas utama (warm white, tidak silau) |
-| **Terracotta** | `#EF4A57` | Aksen tombol darurat, eyebrow tag, nomor langkah |
-| **Rose** | `#FFD9DD` | Seleksi teks, highlight badge, badge pilar |
-| **Sage** | `#DDF1EA` | Kotak tip privasi dan badge sukses |
-| **Line** | `#DEE8E6` | Garis pembatas tipis (*subtle border*) |
-| **Nav Cream** | `#FBF7EC` | Background sticky navigation bar |
-
-- **Font Heading**: `Outfit` (Google Fonts, humanis dan berkarakter tegas)
-- **Font Body**: `Inter` (Google Fonts, tingkat keterbacaan tinggi di segala ukuran layar)
+| **Zero Trackers** | Tanpa script pelacak iklan pihak ketiga (no Meta Pixel, no Google Ads) | Aktivitas pengguna tidak dapat diprofilkan oleh pihak luar |
+| **Quick Exit (ESC)** | `window.location.replace("https://www.google.com")` | Riwayat halaman langsung ditimpa (*replace state*) |
+| **Sanitasi Sesi** | `sessionStorage.clear()` & `localStorage` minimalis | Tidak meninggalkan jejak formulir yang sedang diisi |
+| **Tips Penyamaran** | Panduan bawaan untuk menggunakan *Incognito / Private Browsing* | Mengedukasi pengguna cara berselancar secara aman |
 
 ---
 
-## 📁 Struktur Direktori
+## 🎨 Filosofi Desain & Design Tokens
+
+Nisara menggunakan pendekatan **Trauma-Informed Design**: menghindari warna-warna klinis yang memicu kepanikan atau warna gelap yang mengintimidasi. Warna kanvas dirancang hangat (*warm neutrals*) menyerupai kertas buku (*Paper*), dipadukan dengan aksen *Plum* yang teduh dan *Terracotta* yang berani.
+
+### Palet Warna Resmi
+
+| Token | Nilai Hex | Peran dalam Antarmuka |
+|---|---|---|
+| **Plum** | `#173F44` | Elemen primer, judul, tombol utama (*Primary CTA*) |
+| **Plum Dark** | `#0D3035` | Background 3 Pilar, Top Bar Darurat, Footer |
+| **Soft Cream** | `#FFF3F2` | Latar kartu informasi & aksen lembut |
+| **Paper** | `#FFFDF9` | Warna kanvas latar utama (hangat, tidak silau di mata) |
+| **Terracotta** | `#EF4A57` | Aksen penanda penting, badge langkah, tombol darurat |
+| **Sage** | `#DDF1EA` | Banner tips privasi & status konfirmasi sukses |
+| **Line** | `#DEE8E6` | Garis batas (*border*) minimalis berkarakter halus |
+
+### Tipografi
+- **Heading**: [Outfit](https://fonts.google.com/specimen/Outfit) — Humanis, hangat, ramah, namun memiliki ketegasan dalam menyuarakan isu penting.
+- **Body Text**: [Inter](https://fonts.google.com/specimen/Inter) — Keterbacaan tinggi (*high legibility*) di layar ponsel terkecil sekalipun.
+
+---
+
+## 📱 Responsivitas Lintas Perangkat
+
+Antarmuka Nisara dibangun dengan filosofi **Mobile-First & Fluid Geometry**:
+
+- 📱 **Mobile (320px – 640px)**: Navigasi drawer halus, tombol sentuh berukuran minimal **48×48px** sesuai pedoman WCAG AAA, dan bar aksi cepat di bagian bawah layar.
+- 💻 **Tablet & Laptop (768px – 1024px)**: Tata letak grid multi-kolom adaptif dengan tipografi proporsional.
+- 🖥️ **Desktop & Layar Lebar (>1280px)**: Kontainer konten terpusat (*max-w-1296px*) dengan hierarki visual lapang dan nyaman dibaca.
+- 🚫 **Anti-Horizontal Scroll**: Menggunakan `overflow-x: clip` modern untuk mengeliminasi potensi pergeseran horizontal yang tidak diinginkan.
+
+---
+
+## 💻 Arsitektur & Teknologi
 
 ```text
-Nisara/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml            # CI/CD otomatis ke GitHub Pages
+Frontend Framework   : Next.js 15 (App Router, Server & Client Components)
+UI Library           : React 19
+Bahasa Pemrograman   : TypeScript 5
+Sistem Styling       : Tailwind CSS 3
+Engine Animasi       : Framer Motion 12
+Paket Ikon           : Lucide React
+Optimasi Deployment  : Static Site Generation (SSG) / GitHub Pages Export
+Automated CI/CD      : GitHub Actions
+```
+
+### Struktur Repositori
+
+```text
+├── .github/workflows/
+│   └── deploy.yml              # Alur otomatis deploy ke GitHub Pages
 ├── public/
 │   └── images/
-│       ├── cover.png             # Cover resmi resolusi tinggi
-│       └── nisara-logo.png       # Logo resmi Nisara
+│       ├── cover.png           # Aset visual cover beresolusi Retina
+│       └── nisara-logo.png     # Identitas visual resmi
 ├── src/
 │   ├── app/
-│   │   ├── disclaimer/           # Halaman /disclaimer
-│   │   ├── kebijakan-privasi/    # Halaman /kebijakan-privasi
-│   │   ├── error.tsx             # Error boundary
-│   │   ├── globals.css           # Tailwind + fluid scroll rules
-│   │   ├── layout.tsx            # Root layout, fonts & metadata
-│   │   ├── not-found.tsx         # 404 handler
-│   │   └── page.tsx              # Landing page utama (12 section)
+│   │   ├── disclaimer/         # Batasan tanggung jawab hukum & medis
+│   │   ├── kebijakan-privasi/  # Kebijakan transparansi data pengguna
+│   │   ├── layout.tsx          # Shell aplikasi, font, dan open-graph metadata
+│   │   └── page.tsx            # Komposisi 12 section landing page
 │   ├── components/
-│   │   ├── layout/
-│   │   │   ├── EmergencyTopBar.tsx
-│   │   │   ├── Footer.tsx
-│   │   │   ├── MobileStickyBar.tsx
-│   │   │   └── Navbar.tsx
-│   │   ├── sections/
-│   │   │   ├── CollaborationSection.tsx
-│   │   │   ├── FAQSection.tsx
-│   │   │   ├── HelpChannelsSection.tsx
-│   │   │   ├── HeroSection.tsx
-│   │   │   ├── JoinCommunitySection.tsx
-│   │   │   ├── ProgramsSection.tsx
-│   │   │   ├── SafetyGuideSection.tsx
-│   │   │   ├── ThreePillarsSection.tsx
-│   │   │   └── WhyNisaraSection.tsx
-│   │   └── ui/
-│   │       └── QuickExitButton.tsx
+│   │   ├── layout/             # Top bar darurat, navbar fixed, footer
+│   │   ├── sections/           # Modul konten: Hero, 3 Pilar, Panduan, Form
+│   │   └── ui/                 # CustomSelect, QuickExitButton, Card
 │   └── data/
-│       └── content.ts            # Sumber data & microcopy
-├── next.config.mjs               # Konfigurasi Next.js & Static Export
-├── package.json
-├── tailwind.config.ts
-└── tsconfig.json
+│       └── content.ts          # Single source of truth teks & data layanan
+└── next.config.mjs             # Konfigurasi static export & routing
 ```
 
 ---
 
-## 🚀 Cara Menjalankan Secara Lokal
+## 🚀 Menjalankan Proyek
 
-### Prasyarat
-- [Node.js](https://nodejs.org/) versi 18.18 atau lebih baru.
-- npm, pnpm, atau yarn.
+Bagi kontributor atau pengembang yang ingin menjalankan proyek ini di lingkungan lokal:
 
-### Langkah Instalasi
-1. **Clone repository ini**:
-   ```bash
-   git clone https://github.com/<username>/<repo-name>.git
-   cd <repo-name>
-   ```
+```bash
+# 1. Clone repositori
+git clone https://github.com/<username>/<repo-name>.git
+cd <repo-name>
 
-2. **Install dependensi**:
-   ```bash
-   npm install
-   ```
+# 2. Pasang dependensi
+npm install
 
-3. **Jalankan development server**:
-   ```bash
-   npm run dev
-   ```
+# 3. Jalankan server lokal
+npm run dev
 
-4. **Buka di browser**:
-   Akses `http://localhost:3000` di peramban Anda.
+# 4. Build produksi
+npm run build
+```
 
-5. **Build produksi**:
-   ```bash
-   npm run build
-   ```
+Buka peramban Anda di `http://localhost:3000`.
 
 ---
 
-## 🌐 Cara Deployment ke GitHub Pages
+## 🤝 Bergabung & Berkolaborasi
 
-Project ini sudah dilengkapi file workflow otomatis di `.github/workflows/deploy.yml`.
+Gerakan Nisara terbuka bagi siapa saja yang ingin berkontribusi menciptakan ruang yang lebih adil dan aman bagi perempuan:
 
-### Langkah-langkah:
-1. **Buat repository baru** di akun GitHub Anda (misal bernama `nisara` atau `nisara-landing-page`).
-2. **Hubungkan dan push project ke GitHub**:
-   ```bash
-   git init
-   git branch -M main
-   git add .
-   git commit -m "feat: publish official nisara landing page with full responsiveness"
-   git remote add origin https://github.com/<username>/<repo-name>.git
-   git push -u origin main
-   ```
-3. **Aktifkan GitHub Pages**:
-   - Masuk ke tab **Settings** di repository GitHub Anda.
-   - Pilih menu **Pages** di bilah kiri.
-   - Pada bagian **Build and deployment > Source**, pilih opsi: **GitHub Actions**.
-4. **Selesai!** GitHub Actions akan otomatis melakukan build static export dan website Anda akan tayang di:
-   ```
-   https://<username>.github.io/<repo-name>/
-   ```
+- 📷 **Instagram**: [@nisaraid](https://instagram.com/nisaraid)
+- 📣 **Tagar Gerakan**: `#SahabatNisara` · `#BerdayaMenggemaMerangkul` · `#RuangAmanPerempuan`
 
 ---
 
-## 🛡️ Catatan Keamanan Survivor
+<div align="center">
 
-Website ini dibuat dengan prinsip kehati-hatian privasi:
-- Tidak ada pelacak pihak ketiga (*third-party advertising cookies*).
-- Riwayat sesi sensitif dibersihkan saat tombol keluar cepat ditekan.
-- Dalam situasi darurat aktif, jangan ragu untuk langsung menghubungi hotline resmi **112** atau kepolisian **110**.
+Dibuat dengan kepedulian untuk seluruh perempuan tangguh Indonesia.  
+**© 2026 Nisara. Hak Cipta Dilindungi.**
 
----
-
-## 📄 Lisensi & Kontribusi
-
-- Kode sumber ini dirilis di bawah lisensi **MIT License**.
-- Instagram resmi: [@nisaraid](https://instagram.com/nisaraid)
-- Tanda pagar kampanye: `#SahabatNisara` · `#BerdayaMenggemaMerangkul` · `#StopKekerasan`
-
-© 2026 Komunitas Nisara. Seluruh hak cipta dilindungi undang-undang.
+</div>
